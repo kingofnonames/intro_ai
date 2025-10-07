@@ -27,4 +27,13 @@ class Algorithms:
     
     def dfs(self):
         pass
+
+    def ucb(self):
+        pass
+
+    def dls(self):
+        pass
+
+    def ids(sels):
+        pass
             

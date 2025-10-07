@@ -10,7 +10,7 @@ DELAY = 50
 class MazeApp:
     def __init__(self, root):
         # Thêm tên hàm tìm kiếm, đúng tên thàm trong algorithm
-        ALGORITHMS = ['BFS', 'DFS']
+        ALGORITHMS = ['BFS', 'DFS', 'IDS', 'DLS', 'UCB']
         self.gen_maze = GenMaze()
 
         self.root = root
