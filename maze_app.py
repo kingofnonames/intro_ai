@@ -2,6 +2,7 @@ import tkinter as tk
 from tkinter import ttk
 import random
 import time
+import math
 from algorithm import Algorithms
 from gen_maze import GenMaze
 CELL_SIZE = 25
