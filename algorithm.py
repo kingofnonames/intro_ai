@@ -5,6 +5,10 @@ class Algorithms:
         self.rows = rows
         self.cols = cols
         self.maze = maze
+        self.alpha = 0.1
+        self.gamma = 0.9
+        self.c = 1.0
+        self.episodes = 300
         self.DIRECTIONS = [('N', (-1, 0)), ('S', (1, 0)), ('E', (0, 1)), ('W', (0, -1))]
         self.alpha = 0.1
         self.gamma = 0.9
