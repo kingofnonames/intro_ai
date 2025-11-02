@@ -65,6 +65,7 @@ class MazeApp:
             return
         
         self.canvas_maze.delete("all")
+        self.canvas_path.delete("all")
         self.gen_maze.generate_maze(rows, cols)
         # self.maze = [[{'N': True, 'S': True, 'E': True, 'W': True} for _ in range(cols)] for _ in range(rows)]
         # self.visited = [[False for _ in range(cols)] for _ in range(rows)]
@@ -126,6 +127,8 @@ class MazeApp:
         path = []
         while current is not None:
             (r, c) = current
+            if not visited.get(current, None):
+                break
             path.append((r, c))
             current = visited[current]
         path = path[::-1]
